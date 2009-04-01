@@ -1,0 +1,127 @@
+%
+%  untitled
+%
+%  Created by Sergio on 2009-03-13.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Definici\'on Pr\'actica 1}
+\author{  }
+
+\date{2009-03}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif} 
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+
+\section{Descripci\'on General}
+Simulador de modelos at\'omicos (Thomson, Rutherford, Sommerfeld, Schr\"odinger y Bohr).
+\section{Descripci\'on Funcionalidad}
+- La aplicaci\'on deber\'a permitir al usuario escoger alguno de los modelos at\'omicos.\\
+Identificaci\'on: RFUN-01\\
+Tipo: Funcional.\\
+Descripci\'on: La aplicaci\'on permite escoger entre los distitos modelos at\'omicos (Thomson, Rutherford, Sommerfeld, Schr\"odinger y Bohr) puediendo ver como es su interacci\'on.\\
+Justificaci\'on:  Poder comparar los modelos\\
+El Dependencia:    Ninguna.\\
+Conflictos: Ninguno.\\
+Fuente: Sebasti\'an Arcila.\\
+Prioridad: 2\\
+Satisfacci\'on del Cliente: 5\\
+Insatisfacci\'on del Cliente: 2\\
+Hist\'orico: Sebasti\'an Arcila 2009-03-13\\\\
+- La aplicaci\'on permite interactuar con las constantes y n\'umero de elementos en cada modelo.\\
+Identificaci\'on: RFUN-02.\\
+Tipo: Funcional.\\
+Descripci\'on: La aplicaci\'on implementar\'a la posibilidad que el usuario mediante un evento pueda agregar unas nuevas condiciones a cada uno de los modelos.\\
+Justificaci\'on:  Para entender mejor cada modelo y ver como se agustan algunas aproximaciones entre ellos.\\
+Dependencia: Ninguna.\\
+Conflictos: Ninguno.\\
+Fuente: Sebasti\'an Arcila.\\
+Prioridad: 4\\
+Satisfacci\'on del Cliente: 5\\
+Insatisfacci\'on del Cliente: 4\\
+Hist\'orico: Sergio Botero 2009-03-13\\
+
+\section{IHerramientas}
+\begin{itemize}
+\item  OpenGL sobre C++ (set completo de OpenGL)
+\item Build Essentials
+\item Makefile
+\item Emacs
+\end{itemize}
+\section{Integrantes}
+\begin{itemize}
+\item Sebasti\'an Arcila V. 200710029010
+\item Sergio Botero U. 200710001010
+\end{itemize}
+\section{Cronograma Semanal}
+
+
+\begin{tabular}{cccc}
+\hline
+Semana & Tareas &  Encargados & \\
+\hline
+1 (16-20 Marzo) & Estudio de Modelos at\'omicos y revisar opciones de implementaci\'on & Arcila - Botero & \\
+\hline
+2 (16-20 Marzo) & Implementaci\'on de la aplicaci\'on & Arcila - Botero & \\
+\hline
+3 (30-3 Marzo) & Entrega & Arcila - Botero & \\
+\hline
+\end{tabular}
+
+
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}
